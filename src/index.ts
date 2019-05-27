@@ -10,12 +10,12 @@ export function getPrivateIP(): Promise<string> {
     c.createDataChannel("", {
       reliable: false
     });
-    c.onicecandidate = ({candidate}) => {
+    c.onicecandidate = ({candidate}: RTCPeerConnectionIceEvent) => {
       candidate && resolve(candidate.candidate.split(" ")[4]);
     };
-    c.createOffer(e => {
+    c.createOffer((e: RTCOfferOptions) => {
       c.setLocalDescription(e);
-    }, e => {
+    }, (e: Error) => {
       reject(e);
     });
   });
