@@ -1,6 +1,6 @@
 {
   "name": "private-ip-getter",
-  "version": "0.1.0-SNAPSHOT",
+  "version": "0.1.0",
   "description": "Private IP Getter for Web Browser",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
