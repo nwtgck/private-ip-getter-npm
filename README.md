@@ -5,7 +5,7 @@ Private IP Getter for Web Browser
 ## Installation
 
 ```bash
-npm i -S git+https://github.com/nwtgck/private-ip-getter-web.git#master
+npm i -S git+https://github.com/nwtgck/private-ip-getter-npm.git#master
 ```
 
 ## Usage
